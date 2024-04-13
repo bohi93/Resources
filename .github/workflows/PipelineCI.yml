@@ -12,11 +12,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js 20.x
@@ -28,3 +23,5 @@ jobs:
       run: npm install
     - name: Run unti tests
       run: npm run test:unit
+    - name: Diplay name
+      run: echo "dimitarparvanov"
