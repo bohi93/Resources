@@ -24,5 +24,7 @@ jobs:
       with:
         node-version: 20.x
         cache: 'npm'
-    - run: npm install
-    - run: npm run test:unit
+    - name: Install NPM
+      run: npm install
+    - name: Run unti tests
+      run: npm run test:unit
